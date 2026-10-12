@@ -29,7 +29,7 @@
 
 ## 🔥 News
 
-○ The repository will be completed and the code will be released within one month.
+○ The repository will be gradually completed and the code released within one month.
 
 ○ **2026-12:** To appear in Volume 204, Article 116479.
 
