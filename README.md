@@ -33,6 +33,10 @@
   <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/result.png" width="100%">
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/pool.png" width="100%">
+</p>
+
 ## Video Restoration Demos
 
 <p align="center">
