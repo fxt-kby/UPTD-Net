@@ -122,6 +122,8 @@ For the pool scenes, the backscatter low-frequency weight in `total_lossB` was s
 
 ## Citation
 
+If you find this project useful, please feel free to cite our paper.
+
 ```bibtex
 @article{fei2026uptdnet,
   title   = {UPTD-Net: Unsupervised Polarization-Guided Two-Stage Decoupling for Underwater Low-Light Image Restoration},
