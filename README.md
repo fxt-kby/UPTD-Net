@@ -140,15 +140,6 @@ If you find this project useful, please feel free to cite our paper.
 
 We thank the authors of [CoLIE](https://github.com/ctom2/colie) (Chobola et al., ECCV 2024).
 
-```bibtex
-@inproceedings{chobola2024fast,
-  title     = {Fast Context-Based Low-Light Image Enhancement via Neural Implicit Representations},
-  author    = {Chobola, Tom{\'a}{\v{s}} and Liu, Yu and Zhang, Hanyi and Schnabel, Julia A. and Peng, Tingying},
-  booktitle = {European Conference on Computer Vision},
-  year      = {2024}
-}
-```
-
 ## Contact
 
 For questions, please contact [feixiaotong@tju.edu.cn](mailto:feixiaotong@tju.edu.cn).
