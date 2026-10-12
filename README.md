@@ -29,13 +29,13 @@
 
 ## 🔥 News
 
-● **2025-08-18:** Repository created.
-
-● **2026-09-22:** Paper published online in *Optics & Laser Technology*.
+○ The repository will be completed and the code will be released within one month.
 
 ○ **2026-12:** To appear in Volume 204, Article 116479.
 
-○ **Within one month:** The repository will be completed and the code will be released.
+● **2026-09-22:** Paper published online in *Optics & Laser Technology*.
+
+● **2025-08-18:** Repository created.
 
 ## Results
 
