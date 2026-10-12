@@ -20,11 +20,8 @@
 **Abstract:** Underwater images captured under low-light conditions suffer from the coupled effects of scattering and illumination degradation, which reduce contrast, obscure details, and limit visibility. However, existing polarization-based methods often rely on accurate parameter estimation, making restoration sensitive to model assumptions and parameter errors. Supervised methods require paired datasets that are difficult to acquire in real underwater environments. To address these limitations, we formulate an underwater low-light imaging model inspired by Retinex theory and propose UPTD-Net, an unsupervised two-stage decoupling framework that optimizes each input without paired data or pretraining. UPTD-Net decomposes the coupled degradation into scattering removal and illumination recovery. Rather than using physical parameters estimated from polarization to directly determine the restored image, it incorporates polarization information into both stages as spatial weights for descattering refinement and a soft target for degraded illumination estimation. This design incorporates polarization information throughout restoration while reducing reliance on precise physical parameter estimates. Extensive experiments demonstrate that the proposed framework effectively restores underwater images under complex degradation conditions, achieving favorable quantitative performance and visual quality.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/framework.png" width="92%">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/flowchart.png" width="100%">
+  <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/framework.png" width="48%">
+  <img src="https://raw.githubusercontent.com/fxt-kby/UPTD-Net/main/Figs/flowchart.png" width="48%">
 </p>
 
 <p align="center">
