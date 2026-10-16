@@ -27,16 +27,6 @@
   <em>BD-DeNet removes scattering. RI-DeNet recovers illumination. Polarization guides both stages.</em>
 </p>
 
-## 🔥 News
-
-○ The repository will be gradually completed and the code released within one month.
-
-○ **2026-12:** To appear in Volume 204, Article 116479.
-
-● **2026-09-22:** Paper published online in *Optics & Laser Technology*.
-
-● **2025-08-18:** Repository created.
-
 ## Results
 
 <p align="center">
@@ -73,7 +63,7 @@ Tested with PyTorch 2.5.1.
 Images are grayscale BMP files. Each scene uses three folders, and every image is square. The side length must match `--down_size` (default 450).
 
 ```text
-input/illu3/
+input/illu1/
   s0/s0_1.bmp       S0 intensity, named with _<index>
   dop/1.bmp         DoP map, named <index>.bmp
   s_perp/s0_1.bmp   perpendicular component, same name as the S0 file
@@ -81,7 +71,7 @@ input/illu3/
 
 `S0` and `DoP` are paired by the index. `S⊥` follows the `S0` file name.
 
-`illu1` to `illu4` are four illumination levels of the laboratory data. Each level contains scenes `s0_1` to `s0_15`. The default command uses `illu3`. Pool images and the original 1224×1024 captures are not included.
+`illu1` to `illu3` are three illumination levels of the laboratory data. Each level contains scenes `s0_1` to `s0_15`. The default command uses `illu2`.
 
 ## Run
 
@@ -93,32 +83,12 @@ python run.py
 python run.py --datasets input/illu1/s0 --datasets2 input/illu1/dop --datasets3 input/illu1/s_perp --output_folder output/illu1
 ```
 
-Stage 1 runs 301 iterations. Stage 2 runs `--epochs` iterations, 100 by default. One 450×450 image takes a few minutes on a desktop GPU.
-
 | Output | Content |
 | --- | --- |
 | `output/` | restored image |
 | `output/d/` | direct transmission |
 | `output/d_enhanced/` | result after polarization-guided refinement |
 | `output/b/` | backscattered light |
-| `output/illu/` | estimated illumination |
-| `output/lowpass/` | low-pass component from stage 1 |
-| `output/eme_log.txt` | EME of each image |
-
-## Settings
-
-| | |
-| --- | --- |
-| Stage 1 learning rates | 0.001 for D-Net, 0.0001 for B-Net |
-| Stage 1 loss weights | 1, 1, 1 for transmission; 5, 1, 1 for backscatter |
-| Stage 2 | 100 epochs, learning rate `1e-5` |
-| Stage 2 weights | `--alpha 1` `--beta 20` `--gamma 10` `--delta 5` |
-| Context window | `--window 5` |
-| Illumination reference | 0.5, written as `It = It * 0.5` |
-| Refinement strengths | detail 1, brightness 0.8 |
-| Scale `c` | starts at 1, kept inside [1, 2] |
-
-For the pool scenes, the backscatter low-frequency weight in `total_lossB` was set to 10 instead of 5. Some scenes also used 0.6 or 0.7 in place of 0.5.
 
 ## Citation
 
